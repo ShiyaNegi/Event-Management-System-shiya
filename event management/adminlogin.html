@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="loginPage">
+    <h1>Event Management System</h1>
+    <form id="loginForm">
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        <button type="submit">Login</button>
+        <button type="button" id="cancelButton">Cancel</button>
+        <p id="message"></p>
+    </form>
+</div>
+
+<!-- Admin Welcome Page -->
+<div id="adminWelcomePage" style="display: none;">
+    <h1>Welcome Admin</h1>
+    <button id="maintenanceMenuButton">Maintenance Menu</button>
+    <button id="backToLoginFromAdminWelcomeButton">Back to Login Page</button>
+    <button id="goBackFromAdminWelcomeButton">Go Back</button>
+</div>
+
+<!-- Admin Maintenance Menu Page -->
+<div id="adminMaintenancePage" style="display: none;">
+    <h1>Admin Maintenance Menu</h1>
+    <button id="addMembershipButton">Add Membership</button>
+    <button id="updateMembershipButton">Update Membership</button>
+    <button id="addUserButton">Add User</button>
+    <button id="updateUserButton">Update User</button>
+    <button id="vendorUserManagementButton">Vendor User Management</button>
+    <button id="vendorManagementButton">Vendor Management</button>
+
+    <button id="goBackFromAdminMaintenanceButton">Go Back</button>
+</div>
+
+<!-- Vendor Dashboard Page -->
+<div id="vendorDashboardPage" style="display: none;">
+    <h1>Welcome Vendor</h1>
+    <button id="yourItemButton">Your Item</button>
+    <button id="addNewItemButton">Add New Item</button>
+    <button id="transactionButton">Transaction</button>
+    <button id="logoutButton">Logout</button>
+
+</div>
+
+<!-- Item Management Page (Insert/Delete) -->
+<div id="itemManagementPage" style="display: none;">
+    <h1>Item Management</h1>
+    <button id="insertItemButton">Insert Item</button>
+    <button id="deleteItemButton">Delete Item</button>
+    <button id="backToDashboardButton">Back to Dashboard</button>
+</div>
+
+<!-- Add New Item Page -->
+<div id="addNewItemPage" style="display: none;">
+    <h1>Add New Item</h1>
+    <button id="productStatusButton">Product Status</button>
+    <button id="requestItemButton">Request Item</button>
+    <button id="viewProductButton">View Product</button>
+    <button id="backToDashboardFromAddNewItemButton">Go to Dashboard</button>
+</div>
+
+<!-- Transaction Page -->
+<div id="transactionPage" style="display: none;">
+    <h1>Transaction</h1>
+    <button id="userRequestButton">User Request</button>
+    <button id="backToDashboardFromTransactionButton">Go to Dashboard</button>
+
+</div>
+
+<!-- User Welcome Page -->
+<div id="userWelcomePage" style="display: none;">
+    <h1>Welcome User</h1>
+    <button id="vendorButton">Vendor</button>
+    <button id="cartButton">Cart</button>
+    <button id="guestListButton">Guest List</button>
+    <button id="orderStatusButton">Order Status</button>
+    <button id="backToLoginFromUserWelcomeButton">Back to Login Page</button>
+
+</div>
+
+<!-- Cart Page -->
+<div id="userCartPage" style="display: none;">
+    <h1>Cart</h1>
+    <button id="paymentButton">Payment</button>
+    <button id="totalAmountButton">Total Amount</button>
+    <button id="cancelCartButton">Cancel</button>
+    <button id="goBackFromUserCartPage">Go Back</button>
+</div>
+
+<!-- Guest List Page -->
+<div id="userGuestListPage" style="display: none;">
+    <h1>Guest List</h1>
+    <button id="updateGuestButton">Update Guest</button>
+    <button id="deleteGuestButton">Delete Guest</button>
+    <button id="goBackFromUserGuestListPage">Go Back</button>
+</div>
+
+<!-- Order Status Page -->
+<div id="userOrderStatusPage" style="display: none;">
+    <h1>Order Status</h1>
+    <button id="checkStatusButton">Check Status</button>
+    <button id="goToWelcomePageButton">Go to Welcome Page</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
